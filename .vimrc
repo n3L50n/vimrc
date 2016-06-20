@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'Yggdroot/indentLine'
 Plug 'fatih/vim-go'
+Plug 'scrooloose/syntastic'
 Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
