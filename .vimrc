@@ -1,18 +1,23 @@
-call plug#begin('~/.vim/plugged')
-Plug 'Yggdroot/indentLine'
-Plug 'fatih/vim-go'
-Plug 'scrooloose/syntastic'
-Plug 'flazz/vim-colorschemes'
-Plug 'bling/vim-airline'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-call plug#end()
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'fatih/vim-go'
+Plugin 'scrooloose/syntastic'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'rust-lang/rust.vim'
+call vundle#end()
+filetype plugin indent on
 
 syntax on
-filetype plugin indent on
 colorscheme molokai
 set number
-set relativenumber
 let g:indentLine_char = '|'
 set laststatus=2
 set sw=4
@@ -26,3 +31,4 @@ let g:go_highlight_structs = 1
 let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+let g:rustfmt_autosave = 1
