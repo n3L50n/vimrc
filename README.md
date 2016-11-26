@@ -1,5 +1,5 @@
 Create a symbolic link
-ln -s /Users/nelson.wells/Vim/vimrc/.vimrc /Users/nelson.wells/
+ln -s /Users/$HOME/Vim/vimrc/.vimrc /Users/$HOME/
 
 Grab Plug-Vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
